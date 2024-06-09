@@ -130,6 +130,35 @@
     display: block;
 }
 
+.services-list-item{
+    display: flex;
+    gap: 17px;
+}
+
+.services-first-wrap{
+    width: 110px;
+    height: 110px;
+    border: 1px solid #E0E0E0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-second-wrap{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #4985FF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-wrap{
+    padding-top: 46px;
+}
+
 .about-us{
     padding-top: 100px;
     padding-bottom: 70px;
@@ -186,7 +215,6 @@
     font-weight: 400;
     line-height: 52.66px;
     color: #000000;
-    margin-bottom: 17px;
 }
 
 .about-us-list-text{
@@ -195,6 +223,12 @@
     font-weight: 400;
     line-height: 25.36px;
     color: #999999;
+}
+
+.about-us-text-wrap{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .all-services-first-part{
@@ -207,6 +241,7 @@
 .all-services{
     padding-top: 100px;
     padding-bottom: 85px;
+    background-image: linear-gradient(to bottom, rgb(80, 77, 194) 51%, rgb(255, 255, 255) 49%);
 }
 
 .all-services-title{
@@ -240,6 +275,13 @@
     line-height: 21.94px;
     margin-top: 30px;
     margin-bottom: 30px;
+    counter-increment: custom-counter;
+}
+
+.all-services-list-title::before{
+    content: counter(custom-counter) ".";
+    color: #4985ff;
+    margin-right: 4px;
 }
 
 .all-services-list-text{
@@ -266,6 +308,7 @@
     justify-content: space-between;
     padding-bottom: 85px;
     border-bottom: 1px solid #E0E0E0;
+    counter-reset: custom-counter;
 }
 
 .all-projects{
@@ -322,6 +365,9 @@
 .video{
     padding-top: 70px;
     padding-bottom: 85px;
+    background-image: url("./img/Rectangle-video.png");
+    background-repeat: no-repeat;
+    background-position: top;
 }
 
 .video-title{
@@ -331,6 +377,7 @@
     line-height: 52.66px;
     text-align: center;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 
 .video-text{
@@ -342,12 +389,35 @@
     color: #FFFFFF;
 }
 
+.video-box{
+    width: 970px;
+    height: 430px;
+    background-image: url("./img/Rectangle-video-2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 70px;
+}
+
 .video-box-btn{
+    cursor: pointer;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 500;
     line-height: 25.36px;
     color: #FFFFFF;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 200px;
+    background: transparent;
+    gap: 21px;
 }
 
 .subscribe{
@@ -443,6 +513,9 @@
     font-weight: 400;
     line-height: 22.19px;
     color: #999999; 
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .address-list-item{
@@ -455,6 +528,9 @@
     font-weight: 400;
     line-height: 22.19px;
     color: #999999;  
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .footer-list-item{
